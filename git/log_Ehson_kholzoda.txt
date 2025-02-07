@@ -1,0 +1,18 @@
+14b5120 add git log
+a92f054 add git commit
+8fc6b58 add git add
+cace683 add git status
+31bd5e9 add rm -rf .git
+36031c7 add git innit
+1a3c7ce Git commands
+7945579 add &&. Done!
+de69e8c add rm and rmdir
+c188811 add cat
+ba89d1b add mv
+7ffe3fd add cp
+e1e0c49 add mkdir
+6cb4bac add touch
+b04030a add ls
+0be9e3b add cd
+a89cf0d add pwd
+368b235 Добавил подзаголовок
