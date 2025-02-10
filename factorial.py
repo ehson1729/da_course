@@ -8,6 +8,7 @@ def factorial(n, method="iterative"):
         # Placeholder for recursive method
         pass
 
+
 if __name__ == "__main__":
     number = 5
     method = input("Choose method (iterative/recursive): ").strip().lower()
