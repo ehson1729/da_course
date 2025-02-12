@@ -97,3 +97,14 @@ select *
 from track
 where 
 	composer is not null
+;
+
+select count(distinct composer)
+from track
+;
+
+select distinct album_id
+, sum(album_id)
+from track
+group by composer
+;
