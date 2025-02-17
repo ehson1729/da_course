@@ -108,3 +108,63 @@ select distinct album_id
 from track
 group by composer
 ;
+
+
+select distinct 
+	country 
+	, state 
+from customer
+;
+
+
+select country 
+	, count(customer_id) as customer_cnt
+from customer
+group by 
+	country
+;
+
+/*
+ * 1. from
+ * 2. where
+ * 3. group by
+ * 4. select
+ * 5. offset 
+ */
+
+select country 
+	, count(customer_id) as customer_cnt
+from customer
+where 
+	country != 'USA'
+group by 
+	country
+having 
+	count(customer_id) > 2
+order by 
+	customer_cnt 
+;
+
+
+select
+	country
+	, state
+	, count(customer_id) as customer_cnt
+from customer
+group by
+	country 
+	, state
+;
+
+
+
+
+
+
+
+
+
+
+
+
+
