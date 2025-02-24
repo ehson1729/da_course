@@ -123,4 +123,4 @@ group by
 order by i.customer_id
 ;
 		
-		
+			
