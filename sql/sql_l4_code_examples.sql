@@ -109,7 +109,25 @@ base as (
 		, round(milliseconds / 60000., 2) as duration
 	from track
 )
-select *
-from base;
+, by_genres as (
+	select
+		genre_id
+		, avg(duration) as genre_avg
+	from base
+	group by
+		genre_id
+)
+select
+	track_id
+	, track_name
+	, genre_id
+	, duration
+	, (
+		select round(genre_avg, 2)
+		from by_genres bg
+		where
+			bg.genre_id = b.genre_id
+	)
+from base b;
 
-\l;
+
